@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> IRCTC Ticket Booking</title>
+
+
+<style>
+
+.parent-div {
+    display: flex;
+    width: 100vw; /* this is for the overall width of parent*/
+    padding-left:40px ;
+    padding-right: 40px;
+}
+.left-div {
+    width: 50%;
+    padding-top: 40px;
+
+}
+.right-div{
+    width: 50%;
+}
+.header-div  {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+.login {
+    background-color: orange;
+    color: white;
+}
+h1 {
+    padding-top: 50px;
+    padding-bottom: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+}
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: normal;
+    padding-top: 0;
+}
+.sub-menu span {
+    padding: 10px 15px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif ;   
+    font-weight: 700;
+}
+.train {
+    margin-top: 50px;
+    margin-right: 40px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 30px;
+   padding: 15px;
+   border-radius: 8px;
+   border: 1px solid #ccc;
+   /* width: fit-content; */
+   background-color: white;
+   font-family: arial, san sans-serif;
+}
+.box {
+    text-align: center;
+    
+}
+.icon {
+    font-size: 24px;
+}
+.title {
+    font-size: 18px;
+    font-weight: bold;
+}
+.subtitle {
+    font-size: 20px;
+    color: gray;
+}
+.route {
+    font-size: 20px;
+    cursor: pointer;
+    color: gray;
+    
+}
+.date {
+    margin-top: 50px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 30px;
+   padding: 15px;
+   border-radius: 8px;
+   border: 1px solid #ccc;
+   width: fit-content;
+   background-color: white;
+   font-family: arial, san sans-serif;
+}
+.search-btn {
+  width: 90%;
+  background-color: #28a745; /* green button */
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.search-btn:hover {
+  background-color: #218838;
+}
+
+
+</style>
+</head>
+<body>
+    <div class="parent-div">
+
+        <div class="left-div">
+           
+            <div class="header-div">
+            <div class="logo">
+                <img src="image/logo1.png" class="logo1">
+                <img src="image/logo2.png" class="logo2">
+           </div>
+                
+           <div class="menu">
+             <div>
+                Ask Disha &nbsp; Contact Us &nbsp; Alerts 
+             </div>
+
+             <div> <!-- Buttons-->
+                <button class="login" style="border: 2px solid orange;"> Login </button> &nbsp; &nbsp; 
+                <button style="border: 2px solid rgb(226, 214, 214);"> Register </button> &nbsp; &nbsp;
+                <button style="border: 2px solid rgb(226, 214, 214);"> Agent Login </button> &nbsp;
+             </div>
+           
+           </div> 
+        
+        </div>
+
+           <div class="heading">
+                <h1> Indian Railways </h1>
+                <h2>
+                    <span style="color: rgba(45, 180, 12, 0.973);"> Safety </span>
+                    <span style="color: rgba(235, 30, 30, 0.651);"> Security </span>
+                    <span style="color: rgb(15, 24, 151);"> Punctuality </span>
+                </h2>
+           </div>
+
+            <div class="sub-menu">
+                <span style="background-color: rgb(66, 66, 116); color: white;"><img src="image/icon1.png" height="20" width="20" > Book Ticket</span> &nbsp;
+
+                <span style="border: 1px solid rgb(211, 207, 207); "> &#10003; PNR Status </span> &nbsp;
+
+                <span style="border: 1px solid rgb(211, 207, 207);"><img src="image/icon.png" height="20" width="20"> Charts/Vacancy </span>
+            </div>
+
+            <div class="train"> <!--tain div-->
+
+                <div class="box"> <!--left side bangalore-->
+
+                    <div class="icon"> <img src="image/from.png"> </div>
+                    <div> From </div>
+                    <div class="title"> <h2> Bangalore </h2> </div>
+                    <div class="subtitle"> KSR - Bangalore </div>
+                </div>
+
+                <div class="route"> <img src="image/swap.png"> </div>
+
+                <div class="box"> <!--right side kasaragod-->
+
+                     <div class="icon"> <img src="image/kasaragod.png"> </div>
+                    <div> To </div>
+                    <div class="title"> <h2> Kasaragod </h2> </div>
+                    <div class="subtitle">KSD - Kasaragod </div>
+                </div>
+
+            </div>
+
+            <div class="date"> <!--date div-->
+
+                <div class="box"> <!--left side date-->
+
+                    <div class="icon"> <img src="image/calender.png"> </div>
+                    <div> Date </div>
+                    <div class="title"> <h2> 01 Aug 23 </h2> </div>
+                    <div class="subtitle"> Tuesday </div>
+                </div>
+
+                <div class="class"> <img src="image/class.png"> </div>
+
+                <div class="box"> <!--right side seat-->
+
+                     <div class="icon"> <img src="image/tatkal.png"> </div>
+                    <div> To </div>
+                    <div class="title"> <h2> TATKAL </h2> </div>
+                    <div class="subtitle"> AC 3 tier </div>
+                </div>
+
+            </div>
+            <button class="search-btn">Search Train</button>
+        </div>
+    
+        
+        <div class="right-div">
+             <img src="image/IRCTC.png" alt="IRCTC" class="image">
+        </div>
+        
+
+        
+
+    </div>
+</body>
+</html>

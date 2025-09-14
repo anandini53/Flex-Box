@@ -1,0 +1,18 @@
+Q1.  Describe the main differences between the CSS Flexbox layout model and the CSS Grid layout model. When would you choose to use one over the other?
+
+Answer: CSS Flexbox Layout Model:
+
+The CSS Flexbox offers one-dimentional layout (aligns items in a single row or column). It is helpful in allocating and aligning the space among items in a container (made of grids). It works with all kinds of display devices and screen sizes. To get started you have to define a container element as a grid with display:flex;
+
+CSS Grid Layout Model :
+
+CSS Grid layout is a two-dimentional grid based layout system (arrange items in rowa and columns). It makes easier to design web pages without having to use floats and positioning. To get started, you have to define a container element as a grid with display:grid, set the column and row sizes with grid-template-columns and rows, and then place its child items into the grid with grid-column and grid-row.
+
+Cases to choose one over other:
+
+Cases	                                 Use Flexbox	Use Grid
+Aligning items in a single direction	        ✔	       ❌
+Complex layouts with rows and columns	        ❌	       ✔
+Dynamic resizing of content blocks          	✔	        ✔
+Layout-first design approach	                ❌	       ✔
+Content-first layout (adjust to content)	     ✔         	❌
